@@ -1,8 +1,9 @@
-import Student from "./components/student";
+import Flight from "./components/flight";
+
 function App() {
   return (
     <div>
-      <Student/>
+      <Flight />
     </div>
   );
 }
