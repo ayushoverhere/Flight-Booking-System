@@ -8,7 +8,7 @@ The Flight Booking System is a microservices-based application for managing flig
 
 2. **Spring Framework**: The microservices are built using the Spring(Boot) framework for efficiency.
 
-3. **In-Memory Databases**: H2 in-memory databases store data for each microservice, simplifying setup.
+3. **In-Memory Databases**: MongoDB for services, MYSQL for authentication.
 
 4. **Embedded Tomcat Server**: Spring Boot's embedded Tomcat server handles HTTP requests.
 
