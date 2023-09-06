@@ -1,45 +1,51 @@
-# Flight Booking System
+# Flight Management System
 
-## Overview
+This Flight Management System is a web application built using React for the frontend and Spring Boot for the backend. It utilizes MongoDB for data storage and follows RESTful API principles for communication between the client and server.
 
-The Flight Booking System is a microservices-based application for managing flight bookings. It includes the following features:
+## Technologies Used
 
-1. **RESTful API**: Each microservice provides REST/JSON endpoints for business operations.
+- **React**: The frontend is developed using React, a JavaScript library for building user interfaces.
 
-2. **Spring Framework**: The microservices are built using the Spring(Boot) framework for efficiency.
+- **Spring Boot**: The backend is built on Spring Boot, a Java-based framework for developing web applications.
 
-3. **In-Memory Databases**: MongoDB for services, MYSQL for authentication.
+- **MongoDB**: MongoDB is used as the database to store flight information.
 
-4. **Embedded Tomcat Server**: Spring Boot's embedded Tomcat server handles HTTP requests.
+- **Axios**: Axios is used for making HTTP requests between the frontend and backend.
 
-5. **Asynchronous Messaging**: RabbitMQ facilitates asynchronous communication between microservices.
+## Features
 
-## Components
+- **Flight Registration**: Users can register new flights by providing flight name, destination, and price.
 
-1. **Search Microservice**: Retrieves available flights and communicates with the Fare service.
+- **Flight Editing**: Existing flights can be edited with updated details.
 
-2. **Fare Microservice**: Manages fare-related operations and serves fare information.
+- **Flight Deletion**: Flights can be deleted from the system.
 
-3. **Booking Microservice**: Handles flight bookings and passenger details.
-
-4. **Check-in Microservice**: Manages passenger check-in operations.
+- **Listing Flights**: The system lists all flights stored in the MongoDB database.
 
 ## Usage
 
-1. **Search & Book**: Search for flights, book tickets, and receive booking confirmation.
+1. Clone the repository.
 
-2. **Check-In**: Perform passenger check-in with a confirmation message.
+2. Navigate to the `flight-management-system` directory.
 
-## Testing
+3. Run the Spring Boot backend:
+   ```bash
+   cd backend
+   ./mvnw spring-boot:run
+  Copy code
+  cd frontend
+  npm install
+  npm start
+  Access the application in your web browser at http://localhost:3000.
+  
+  ## API Endpoints
 
-A web-based front-end with basic authentication is available for testing.
-
-## Customization
-
-Customize the application by modifying microservice code and adding new features.
-
-## Security
-
-Enhance security beyond basic authentication for production use.
-
-The Flight Booking System is a flexible and efficient solution for flight booking management. Adapt and extend it to your specific needs.
+  
+  GET /api/v1/flight/getall: Get all flights.
+  POST /api/v1/flight/save: Register a new flight.
+  PUT /api/v1/flight/edit/{id}: Update an existing flight.
+  DELETE /api/v1/flight/delete/{id}: Delete a flight.
+  
+  Feel free to contribute to this project and improve the Flight Management System.
+  
+  Enjoy managing your flights!         
