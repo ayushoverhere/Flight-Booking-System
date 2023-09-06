@@ -41,10 +41,10 @@ This Flight Management System is a web application built using React for the fro
   ## API Endpoints
 
   
-  GET /api/v1/flight/getall: Get all flights.
-  POST /api/v1/flight/save: Register a new flight.
-  PUT /api/v1/flight/edit/{id}: Update an existing flight.
-  DELETE /api/v1/flight/delete/{id}: Delete a flight.
+ - GET /api/v1/flight/getall: Get all flights.
+ - POST /api/v1/flight/save: Register a new flight.
+ - PUT /api/v1/flight/edit/{id}: Update an existing flight.
+ - DELETE /api/v1/flight/delete/{id}: Delete a flight.
   
   Feel free to contribute to this project and improve the Flight Management System.
   
